@@ -1,0 +1,4 @@
+id;submission_id;anomaly_field;anomaly_message;created_by;created_at;resolved_at;resolved_by;resolution_note
+8e8ba72c-ceaf-46ec-a54e-6d23b7c5f7ef;9eeb2176-31b0-4c90-9b99-18630ffc0def;calls_dialled;Test;3d4c8130-dc78-4b9e-8332-3f657ca6b407;2025-11-26 12:29:55.184887+00;;;
+01198675-2539-40db-b3e1-e375b0790f6e;9eeb2176-31b0-4c90-9b99-18630ffc0def;calls_taken;Test;3d4c8130-dc78-4b9e-8332-3f657ca6b407;2025-11-26 12:30:08.916377+00;;;
+cf05e0d0-3320-4545-848e-9066987e1451;9eeb2176-31b0-4c90-9b99-18630ffc0def;is_crm_updated;3rd ccc;3d4c8130-dc78-4b9e-8332-3f657ca6b407;2025-11-26 12:59:10.719855+00;;;

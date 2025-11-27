@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Professional Dashboard Theme - Burgundy Red from Eagle Logo */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 17%;
+
+    /* Primary: Deep Burgundy from Logo */
+    --primary: 356 55% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 356 55% 40%;
+
+    /* Secondary: Soft Gray */
+    --secondary: 0 0% 91%;
+    --secondary-foreground: 0 0% 17%;
+
+    /* Muted: Light backgrounds */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 47%;
+
+    /* Accent: Vibrant Red from Logo Highlights */
+    --accent: 0 77% 64%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success: Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning: Burgundy Tint */
+    --warning: 356 60% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Destructive: Medium Red from Logo */
+    --destructive: 0 70% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 356 55% 45%;
+
+    --radius: 0.5rem;
+
+    /* Dashboard specific */
+    --dashboard-nav: 356 55% 45%;
+    --dashboard-nav-foreground: 0 0% 100%;
+    
+    /* Gradients - Multi-stop matching logo depth */
+    --gradient-primary: linear-gradient(135deg, hsl(356 55% 45%) 0%, hsl(0 50% 53%) 50%, hsl(0 77% 64%) 100%);
+    --gradient-card: linear-gradient(to bottom, hsl(0 0% 100%), hsl(356 10% 98%));
+    
+    /* Shadows - Burgundy tinted */
+    --shadow-sm: 0 1px 2px 0 rgba(107, 35, 41, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(107, 35, 41, 0.1), 0 2px 4px -1px rgba(107, 35, 41, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(107, 35, 41, 0.1), 0 4px 6px -2px rgba(107, 35, 41, 0.05);
+    --shadow-card: 0 2px 8px rgba(107, 35, 41, 0.12);
+
+    /* Sidebar */
+    --sidebar-background: 356 55% 45%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 356 55% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 77% 64%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 356 55% 40%;
+    --sidebar-ring: 356 55% 45%;
+
+    /* Employee Theme - Black, White, Burgundy Red */
+    --employee-bg: 0 0% 100%;
+    --employee-fg: 0 0% 10%;
+    --employee-section-light: 0 0% 98%;
+    --employee-section-medium: 0 0% 95%;
+    --employee-section-dark: 0 0% 92%;
+    --employee-accent: 356 55% 45%;
+    --employee-accent-foreground: 0 0% 100%;
+    --employee-border: 0 0% 88%;
+  }
+
+  .dark {
+    --background: 0 0% 17%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 17%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 17%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 356 65% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 356 65% 50%;
+
+    --secondary: 0 0% 22%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 22%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 77% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 356 70% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 356 65% 55%;
+
+    --dashboard-nav: 0 0% 17%;
+    --dashboard-nav-foreground: 0 0% 98%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(356 65% 55%) 0%, hsl(0 60% 60%) 50%, hsl(0 77% 70%) 100%);
+    --gradient-card: linear-gradient(to bottom, hsl(0 0% 17%), hsl(356 10% 19%));
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --shadow-card: 0 2px 8px rgba(107, 35, 41, 0.3);
+
+    --sidebar-background: 0 0% 17%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 356 65% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 22%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 356 65% 55%;
+
+    /* Employee Theme - Dark mode */
+    --employee-bg: 0 0% 10%;
+    --employee-fg: 0 0% 98%;
+    --employee-section-light: 0 0% 15%;
+    --employee-section-medium: 0 0% 18%;
+    --employee-section-dark: 0 0% 22%;
+    --employee-accent: 356 65% 55%;
+    --employee-accent-foreground: 0 0% 100%;
+    --employee-border: 0 0% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
